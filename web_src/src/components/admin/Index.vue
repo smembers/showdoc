@@ -37,8 +37,8 @@
           <el-main>
 
             <User v-if="open_menu_index == 1 "> </User>
-            <Item v-if="open_menu_index == 2 "> </Item> 
-             <Setting v-if="open_menu_index == 3 "> </Setting> 
+            <Item v-if="open_menu_index == 2 "> </Item>
+             <Setting v-if="open_menu_index == 3 "> </Setting>
 
         </el-main>
           <el-footer>
@@ -47,13 +47,7 @@
         </el-container>
       </el-container>
     </el-container>
-
-
     </div>
-
-
-    
-  </div>
 </template>
 
 <style scoped>
@@ -91,19 +85,19 @@
     margin-left: 200px;
     overflow: visible;
   }
-  
+
   body > .el-container {
     position: absolute;
     height: 100%;
     width: 100%;
 
   }
-  
+
   .el-container:nth-child(5) .el-aside,
   .el-container:nth-child(6) .el-aside {
     line-height: 260px;
   }
-  
+
   .el-container:nth-child(7) .el-aside {
     line-height: 320px;
   }
@@ -145,7 +139,7 @@ export default {
       this.$nextTick(()=>{
         this.open_menu_index = index ;
       });
-      
+
     },
     check_upadte(){
         var that = this ;
@@ -167,7 +161,7 @@ export default {
   },
   mounted () {
     this.check_upadte();
-    
+
   },
   beforeDestroy(){
     this.$message.closeAll();

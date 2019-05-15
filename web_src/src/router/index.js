@@ -28,8 +28,9 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Index',
-      component: Index
+      // name: 'Index',
+      // component: Index
+      redirect: "/user/login"
     },
     {
       path: '/user/login',
@@ -120,7 +121,7 @@ export default new Router({
       path: '/team/index',
       name: 'Team',
       component: Team
-    }, 
+    },
     {
       path: '/team/member/:team_id',
       name: 'TeamMember',
