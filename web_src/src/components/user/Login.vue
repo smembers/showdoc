@@ -24,17 +24,15 @@
                 <el-button type="primary" style="width:100%;" @click="onSubmit" >{{$t("login")}}</el-button>
               </el-form-item>
 
-              <el-form-item label="" >
-                  <router-link to="/user/register">{{$t("register_new_account")}}</router-link>
-                  &nbsp;&nbsp;&nbsp;
-
-              </el-form-item>
+<!--              <el-form-item label="" >-->
+<!--                  <router-link to="/user/register">{{$t("register_new_account")}}</router-link>-->
+<!--              </el-form-item>-->
             </el-form>
           </el-card>
     </el-container>
 
     <Footer> </Footer>
-    
+
   </div>
 </template>
 
@@ -86,10 +84,10 @@ export default {
                  setTimeout(function(){
                     that.is_show_alert = false;
                  },500);
-                 
+
                 }});
               }
-              
+
             });
       },
       change_v_code_img(){
